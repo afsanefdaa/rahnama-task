@@ -1,0 +1,97 @@
+{
+  "name": "client-side",
+  "version": "1.1.0",
+  "private": true,
+  "author": "Afsane Fadaei",
+  "dependencies": {
+    "@ant-design/icons": "4.0.0",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/user-event": "^12.0.11",
+    "antd": "^4.4.0",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
+    "classnames": "^2.2.6",
+    "jalali-moment": "^3.3.8",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "rc-tween-one": "^2.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^6.0.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "uuid": "^8.2.0",
+    "yup": "^0.29.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylelint 'src/**/*.scss' --syntax scss --fix",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "flow:run": "yarn run flow",
+    "flow:status": "yarn run flow status"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "./src/**/*.{js,jsx}": [
+      "npm run --silent lint:js:fix",
+      "git add"
+    ],
+    "./src/**/*.scss": [
+      "npm run --silent lint:scss:fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-flow": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@hookform/resolvers": "^0.0.5",
+    "@testing-library/react": "^10.4.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "flow-bin": "^0.128.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "react-test-renderer": "^16.12.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.14.2"
+  }
+}

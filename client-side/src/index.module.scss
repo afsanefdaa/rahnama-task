@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Shabnam;
+  src: url("./../src/assets/fonts/shabnam/Shabnam.woff") format("woff"),
+  url("./../src/assets/fonts/shabnam/Shabnam.woff2") format("ttf2"),
+  url("./../src/assets/fonts/shabnam/Shabnam.ttf") format("ttf"),
+  url("./../src/assets/fonts/shabnam/Shabnam.eot") format("eot"),
+  url("./../src/assets/fonts/shabnam/Shabnam-Bold.woff") format("woff"),
+  url("./../src/assets/fonts/shabnam/Shabnam-Bold.woff2") format("ttf2"),
+  url("./../src/assets/fonts/shabnam/Shabnam-Bold.ttf") format("ttf"),
+  url("./../src/assets/fonts/shabnam/Shabnam-Bold.eot") format("eot"),
+  url("./../src/assets/fonts/shabnam/Shabnam-Light.woff") format("woff"),
+  url("./../src/assets/fonts/shabnam/Shabnam-Light.woff2") format("ttf2"),
+  url("./../src/assets/fonts/shabnam/Shabnam-Light.ttf") format("ttf"),
+  url("./../src/assets/fonts/shabnam/Shabnam-Light.eot") format("eot");
+
+  font-weight: normal;
+  font-style: normal
+}
+
+body {
+  margin: 0;
+  font-family:
+    Shabnam,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #dedede;
+  font-size: 16px;
+}

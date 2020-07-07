@@ -1,0 +1,12 @@
+{
+  "presets": ["@babel/preset-flow", "@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "inline-react-svg",
+    [
+      "import", {
+      "libraryName": "antd",
+      "style": true
+    }
+    ]
+  ]
+}

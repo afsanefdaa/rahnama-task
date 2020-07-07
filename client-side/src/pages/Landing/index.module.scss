@@ -1,0 +1,33 @@
+.welcome {
+  background: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.12);
+
+  span {
+    text-align: center;
+    display: block;
+    color: #d48166;
+    width: 100%;
+  }
+}
+
+.col {
+  margin-bottom: 15px;
+}
+
+.spin {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 40px;
+}
+
+:global {
+  .ant-spin-dot-item {
+    background-color: #d48166;
+  }
+}

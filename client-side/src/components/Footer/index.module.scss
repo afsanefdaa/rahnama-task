@@ -1,0 +1,51 @@
+.body {
+  flex-shrink: 0;
+  border-top: 1px solid #717171;
+  padding: 50px 0;
+}
+
+.body .box {
+  display: flex;
+  border-bottom: 1px solid #717171;
+  padding-bottom: 50px;
+  direction: rtl;
+}
+
+.body .box .cols {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.body .box .cols .title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28571em;
+  color: #484848;
+  margin: 0;
+}
+
+.body .box .cols a {
+  margin-top: 5px;
+  color: #767676 !important;
+  text-decoration: unset;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.body .box .cols a:first-child {
+  margin-top: 30px;
+}
+
+.body .box .cols a:hover {
+  color: #d48166 !important;
+}
+
+.body .copyRight {
+  text-align: center;
+  color: #d48166;
+  font-weight: 600;
+  font-size: 11px;
+  display: block;
+  margin-top: 5px;
+}
